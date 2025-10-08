@@ -8,12 +8,11 @@ type LayoutProps = {
 
 const inter = Inter({
   subsets: ['latin'],
-  variable: '--font-inter',
 });
 
 export const Layout = ({ children }: LayoutProps) => {
   return (
-    <div className={`relative flex min-h-screen flex-col dark ${inter.className}`}>
+    <div className={`${inter.className} relative flex min-h-screen flex-col`}>
       <Header />
       <main className="flex-1 flex flex-col pb-12">{children}</main>
       <Footer />
