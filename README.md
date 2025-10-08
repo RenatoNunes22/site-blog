@@ -1,40 +1,154 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+# Site Blog - Landing Page e Blog Community
 
-## Getting Started
+Um projeto moderno de landing page e blog desenvolvido com Next.js, TypeScript e Tailwind CSS, seguindo o design do Figma.
 
-First, run the development server:
+## 🎨 Design
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+O projeto foi desenvolvido seguindo o design disponível no Figma:
+[Landing Page e Blog - Community](https://www.figma.com/design/ambWrom54e9wmRlZLGwx3H/Landing-Page-e-Blog--Community-?node-id=3-376&t=sIXesnAexvBfr1MW-0)
+
+## 🚀 Tecnologias Utilizadas
+
+- **Next.js 15.5.4** - Framework React para produção
+- **React 19.1.0** - Biblioteca para interfaces de usuário
+- **TypeScript 5** - Superset do JavaScript com tipagem estática
+- **Tailwind CSS 3.4.18** - Framework CSS utilitário
+- **Radix UI** - Componentes acessíveis e sem estilo
+- **Lucide React** - Ícones SVG
+- **ESLint** - Linter para JavaScript/TypeScript
+- **Prettier** - Formatador de código
+
+## 📁 Estrutura do Projeto
+
+```
+src/
+├── components/           # Componentes reutilizáveis
+│   ├── active-link/     # Componente de link ativo
+│   ├── footer/          # Rodapé da aplicação
+│   ├── header/          # Cabeçalho da aplicação
+│   ├── layout/          # Layout principal
+│   ├── logo/            # Componente do logo
+│   └── ui/              # Componentes de UI base
+├── lib/                 # Utilitários e configurações
+├── pages/               # Páginas da aplicação
+│   ├── api/             # API routes
+│   ├── _app.tsx         # Configuração global da aplicação
+│   ├── _document.tsx    # Documento HTML customizado
+│   └── index.tsx        # Página inicial
+└── styles/              # Estilos globais
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🎨 Sistema de Design
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+### Paleta de Cores
 
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+- **Azul**: `#2C85FC`, `#2266C1`, `#0D284C`
+- **Ciano**: `#2DEBFC`, `#187D86`, `#0E474C`
+- **Cinza**: `#F9FAFC`, `#D3D5D9`, `#93979F`, `#20242C`, `#16181D`
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
+### Tipografia
 
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **Headings**: PT Sans Caption (700)
+- **Body**: Inter (400)
+- **Actions**: Inter (500)
 
-## Learn More
+### Componentes
 
-To learn more about Next.js, take a look at the following resources:
+- Sistema de componentes baseado em Radix UI
+- Variantes de botões e elementos interativos
+- Layout responsivo com Tailwind CSS
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
+## 🛠️ Instalação e Configuração
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Pré-requisitos
 
-## Deploy on Vercel
+- Node.js 18+
+- npm ou yarn
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Passos para instalação
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
+1. **Clone o repositório**
+
+   ```bash
+   git clone <url-do-repositorio>
+   cd site-blog
+   ```
+
+2. **Instale as dependências**
+
+   ```bash
+   npm install
+   # ou
+   yarn install
+   ```
+
+3. **Execute o projeto em modo de desenvolvimento**
+
+   ```bash
+   npm run dev
+   # ou
+   yarn dev
+   ```
+
+4. **Acesse a aplicação**
+   Abra [http://localhost:3000](http://localhost:3000) no seu navegador
+
+## 📜 Scripts Disponíveis
+
+- `npm run dev` - Inicia o servidor de desenvolvimento
+- `npm run build` - Cria a build de produção
+- `npm run start` - Inicia o servidor de produção
+- `npm run lint` - Executa o linter
+- `npm run format` - Formata o código com Prettier
+- `npm run format:check` - Verifica se o código está formatado
+
+## 🏗️ Funcionalidades
+
+### Layout Principal
+
+- **Header fixo** com navegação e logo
+- **Navegação responsiva** com links ativos
+- **Footer** com links institucionais
+- **Layout flexível** que se adapta ao conteúdo
+
+### Componentes
+
+- **ActiveLink**: Componente de navegação com estado ativo
+- **Button**: Botões com múltiplas variantes
+- **Logo**: Componente do logo da aplicação
+- **Layout**: Estrutura principal da aplicação
+
+### Páginas
+
+- **Home**: Página inicial (em desenvolvimento)
+- **Blog**: Página do blog (em desenvolvimento)
+- **Start Now**: Página de início (em desenvolvimento)
+
+## 🎯 Próximos Passos
+
+- [ ] Implementar conteúdo da página inicial
+- [ ] Desenvolver sistema de blog
+- [ ] Adicionar funcionalidades de busca
+- [ ] Implementar sistema de comentários
+- [ ] Adicionar testes unitários
+- [ ] Configurar CI/CD
+
+## 🤝 Contribuição
+
+1. Faça um fork do projeto
+2. Crie uma branch para sua feature (`git checkout -b feature/AmazingFeature`)
+3. Commit suas mudanças (`git commit -m 'Add some AmazingFeature'`)
+4. Push para a branch (`git push origin feature/AmazingFeature`)
+5. Abra um Pull Request
+
+## 📄 Licença
+
+Este projeto está sob a licença MIT. Veja o arquivo `LICENSE` para mais detalhes.
+
+## 📞 Contato
+
+Para dúvidas ou sugestões, entre em contato através dos canais disponíveis no projeto.
+
+---
+
+Desenvolvido com ❤️ usando Next.js e Tailwind CSS
