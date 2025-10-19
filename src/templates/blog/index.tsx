@@ -2,7 +2,7 @@ import { PostCard } from '@/templates/blog/post-card';
 import { Search } from '@/components/search';
 import { useRouter } from 'next/router';
 import { PostGridCard } from './post-grid-card.tsx';
-import { allPosts, Post } from 'contentlayer/generated';
+import { allPosts } from 'contentlayer/generated';
 import { Inbox } from 'lucide-react';
 
 export default function BlogPage() {
@@ -12,7 +12,9 @@ export default function BlogPage() {
     ? `Resultado de busca para "${query}"`
     : 'Dicas e estratégias para impulsionar seu negócio';
 
-  const posts: Post[] = [];
+  const posts = query
+    ? allPosts.filter((post) => post.title.toLowerCase().includes(query.toLowerCase()))
+    : allPosts;
   const hasPosts = posts.length > 0;
 
   return (
