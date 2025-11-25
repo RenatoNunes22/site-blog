@@ -1,154 +1,155 @@
-# Site Blog - Landing Page e Blog Community
+# Site Blog - Landing Page and Blog Community
 
-Um projeto moderno de landing page e blog desenvolvido com Next.js, TypeScript e Tailwind CSS, seguindo o design do Figma.
+A modern landing page and blog project developed with Next.js, TypeScript, and Tailwind CSS, following the design from Figma.
 
 ## 🎨 Design
 
-O projeto foi desenvolvido seguindo o design disponível no Figma:
-[Landing Page e Blog - Community](https://www.figma.com/design/ambWrom54e9wmRlZLGwx3H/Landing-Page-e-Blog--Community-?node-id=3-376&t=sIXesnAexvBfr1MW-0)
+The project was developed following the design available on Figma:
+[Landing Page and Blog - Community](https://www.figma.com/design/ambWrom54e9wmRlZLGwx3H/Landing-Page-e-Blog--Community-?node-id=3-376&t=sIXesnAexvBfr1MW-0)
 
-## 🚀 Tecnologias Utilizadas
+## 🚀 Technologies Used
 
-- **Next.js 15.5.4** - Framework React para produção
-- **React 19.1.0** - Biblioteca para interfaces de usuário
-- **TypeScript 5** - Superset do JavaScript com tipagem estática
-- **Tailwind CSS 3.4.18** - Framework CSS utilitário
-- **Radix UI** - Componentes acessíveis e sem estilo
-- **Lucide React** - Ícones SVG
-- **ESLint** - Linter para JavaScript/TypeScript
-- **Prettier** - Formatador de código
+- **Next.js 15.5.4** - React framework for production
+- **React 19.1.0** - Library for user interfaces
+- **TypeScript 5** - JavaScript superset with static typing
+- **Tailwind CSS 3.4.18** - Utility-first CSS framework
+- **Radix UI** - Accessible and unstyled components
+- **Lucide React** - SVG Icons
+- **Contentlayer** - Content SDK that validates and transforms your content into type-safe JSON data
+- **ESLint** - Linter for JavaScript/TypeScript
+- **Prettier** - Code formatter
 
-## 📁 Estrutura do Projeto
+## 📁 Project Structure
 
 ```
 src/
-├── components/           # Componentes reutilizáveis
-│   ├── active-link/     # Componente de link ativo
-│   ├── footer/          # Rodapé da aplicação
-│   ├── header/          # Cabeçalho da aplicação
-│   ├── layout/          # Layout principal
-│   ├── logo/            # Componente do logo
-│   └── ui/              # Componentes de UI base
-├── lib/                 # Utilitários e configurações
-├── pages/               # Páginas da aplicação
+├── components/           # Reusable components
+│   ├── active-link/     # Active link component
+│   ├── footer/          # Application footer
+│   ├── header/          # Application header
+│   ├── layout/          # Main layout
+│   ├── logo/            # Logo component
+│   └── ui/              # Base UI components
+├── lib/                 # Utilities and configurations
+├── pages/               # Application pages
 │   ├── api/             # API routes
-│   ├── _app.tsx         # Configuração global da aplicação
-│   ├── _document.tsx    # Documento HTML customizado
-│   └── index.tsx        # Página inicial
-└── styles/              # Estilos globais
+│   ├── _app.tsx         # Global application configuration
+│   ├── _document.tsx    # Custom HTML document
+│   └── index.tsx        # Home page
+└── styles/              # Global styles
 ```
 
-## 🎨 Sistema de Design
+## 🎨 Design System
 
-### Paleta de Cores
+### Color Palette
 
-- **Azul**: `#2C85FC`, `#2266C1`, `#0D284C`
-- **Ciano**: `#2DEBFC`, `#187D86`, `#0E474C`
-- **Cinza**: `#F9FAFC`, `#D3D5D9`, `#93979F`, `#20242C`, `#16181D`
+- **Blue**: `#2C85FC`, `#2266C1`, `#0D284C`
+- **Cyan**: `#2DEBFC`, `#187D86`, `#0E474C`
+- **Gray**: `#F9FAFC`, `#D3D5D9`, `#93979F`, `#20242C`, `#16181D`
 
-### Tipografia
+### Typography
 
 - **Headings**: PT Sans Caption (700)
 - **Body**: Inter (400)
 - **Actions**: Inter (500)
 
-### Componentes
+### Components
 
-- Sistema de componentes baseado em Radix UI
-- Variantes de botões e elementos interativos
-- Layout responsivo com Tailwind CSS
+- Component system based on Radix UI
+- Button variants and interactive elements
+- Responsive layout with Tailwind CSS
 
-## 🛠️ Instalação e Configuração
+## 🛠️ Installation and Setup
 
-### Pré-requisitos
+### Prerequisites
 
 - Node.js 18+
-- npm ou yarn
+- npm or yarn
 
-### Passos para instalação
+### Installation Steps
 
-1. **Clone o repositório**
+1. **Clone the repository**
 
    ```bash
-   git clone <url-do-repositorio>
+   git clone <repository-url>
    cd site-blog
    ```
 
-2. **Instale as dependências**
+2. **Install dependencies**
 
    ```bash
    npm install
-   # ou
+   # or
    yarn install
    ```
 
-3. **Execute o projeto em modo de desenvolvimento**
+3. **Run the project in development mode**
 
    ```bash
    npm run dev
-   # ou
+   # or
    yarn dev
    ```
 
-4. **Acesse a aplicação**
-   Abra [http://localhost:3000](http://localhost:3000) no seu navegador
+4. **Access the application**
+   Open [http://localhost:3000](http://localhost:3000) in your browser
 
-## 📜 Scripts Disponíveis
+## 📜 Available Scripts
 
-- `npm run dev` - Inicia o servidor de desenvolvimento
-- `npm run build` - Cria a build de produção
-- `npm run start` - Inicia o servidor de produção
-- `npm run lint` - Executa o linter
-- `npm run format` - Formata o código com Prettier
-- `npm run format:check` - Verifica se o código está formatado
+- `npm run dev` - Starts the development server
+- `npm run build` - Creates the production build
+- `npm run start` - Starts the production server
+- `npm run lint` - Runs the linter
+- `npm run format` - Formats the code with Prettier
+- `npm run format:check` - Checks if the code is formatted
 
-## 🏗️ Funcionalidades
+## 🏗️ Features
 
-### Layout Principal
+### Main Layout
 
-- **Header fixo** com navegação e logo
-- **Navegação responsiva** com links ativos
-- **Footer** com links institucionais
-- **Layout flexível** que se adapta ao conteúdo
+- **Fixed Header** with navigation and logo
+- **Responsive Navigation** with active links
+- **Footer** with institutional links
+- **Flexible Layout** that adapts to content
 
-### Componentes
+### Components
 
-- **ActiveLink**: Componente de navegação com estado ativo
-- **Button**: Botões com múltiplas variantes
-- **Logo**: Componente do logo da aplicação
-- **Layout**: Estrutura principal da aplicação
+- **ActiveLink**: Navigation component with active state
+- **Button**: Buttons with multiple variants
+- **Logo**: Application logo component
+- **Layout**: Main application structure
 
-### Páginas
+### Pages
 
-- **Home**: Página inicial (em desenvolvimento)
-- **Blog**: Página do blog (em desenvolvimento)
-- **Start Now**: Página de início (em desenvolvimento)
+- **Home**: Home page
+- **Blog**: Blog page with search and post listing
+- **Start Now**: Start page
 
-## 🎯 Próximos Passos
+## 🎯 Next Steps
 
-- [ ] Implementar conteúdo da página inicial
-- [ ] Desenvolver sistema de blog
-- [ ] Adicionar funcionalidades de busca
-- [ ] Implementar sistema de comentários
-- [ ] Adicionar testes unitários
-- [ ] Configurar CI/CD
+- [x] Implement home page content
+- [x] Develop blog system
+- [x] Add search functionality
+- [ ] Implement comment system
+- [ ] Add unit tests
+- [ ] Configure CI/CD
 
-## 🤝 Contribuição
+## 🤝 Contribution
 
-1. Faça um fork do projeto
-2. Crie uma branch para sua feature (`git checkout -b feature/AmazingFeature`)
-3. Commit suas mudanças (`git commit -m 'Add some AmazingFeature'`)
-4. Push para a branch (`git push origin feature/AmazingFeature`)
-5. Abra um Pull Request
+1. Fork the project
+2. Create a branch for your feature (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
-## 📄 Licença
+## 📄 License
 
-Este projeto está sob a licença MIT. Veja o arquivo `LICENSE` para mais detalhes.
+This project is under the MIT license. See the `LICENSE` file for more details.
 
-## 📞 Contato
+## 📞 Contact
 
-Para dúvidas ou sugestões, entre em contato através dos canais disponíveis no projeto.
+For questions or suggestions, please contact us through the available channels in the project.
 
 ---
 
-Desenvolvido com ❤️ usando Next.js e Tailwind CSS
+Developed with ❤️ using Next.js and Tailwind CSS
