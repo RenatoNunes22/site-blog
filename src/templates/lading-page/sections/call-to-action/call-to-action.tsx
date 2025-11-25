@@ -14,11 +14,11 @@ export const CallToAction = () => {
       <div className="container relative">
         <div className="flex flex-col items-center gap-6 text-center">
           <h2 className="font-sans text-gray-100 text-balance text-heading-xl">
-            Crie uma loja online e inicie suas vendas ainda hoje
+            Create an online store and start your sales today
           </h2>
           <Button variant="default" asChild className="mt-6">
             <Link href="/criar-loja">
-              Criar loja grátis
+              Create free store
               <ArrowRight />
             </Link>
           </Button>

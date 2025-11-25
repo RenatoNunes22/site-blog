@@ -20,7 +20,7 @@ export type PostPageProps = {
 };
 
 export const PostPage = ({ post }: PostPageProps) => {
-  const publishedDate = new Date(post?.date).toLocaleDateString('pt-BR');
+  const publishedDate = new Date(post?.date).toLocaleDateString('en-US');
   const postUrl = `https://site.set/blog/${post.slug}`;
 
   const { shareButtons } = useShare({
@@ -73,7 +73,7 @@ export const PostPage = ({ post }: PostPageProps) => {
                 <Avatar.Content>
                   <Avatar.Title>{post?.author.name}</Avatar.Title>
                   <Avatar.Description>
-                    Publicado em {''}
+                    Published on {''}
                     <time dateTime={post?.date}>{publishedDate}</time>
                   </Avatar.Description>
                 </Avatar.Content>
@@ -88,7 +88,7 @@ export const PostPage = ({ post }: PostPageProps) => {
           <aside className="space-y-6">
             <div className="rounded-lg bg-gray-700">
               <h2 className="hidden md:block mb-4 text-heading-xs text-gray-100">
-                Compartilhar
+                Share
               </h2>
 
               <div className="flex justify-between md:flex-col gap-2">

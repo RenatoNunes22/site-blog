@@ -9,10 +9,10 @@ export const Footer = () => {
           <Logo />
           <nav className="flex flex-col md:flex-row items-center gap-4 text-sm text-blue-100">
             <Link href="/temos-de-uso" className="text-sm hover:text-blue-200">
-              Termos de uso
+              Terms of use
             </Link>
             <Link href="/politica-de-privacidade" className="text-sm hover:text-blue-200">
-              Politica de privacidade
+              Privacy policy
             </Link>
             <Link href="/feedback" className="text-sm hover:text-blue-200">
               Feedback

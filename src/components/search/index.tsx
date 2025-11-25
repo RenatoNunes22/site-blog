@@ -44,7 +44,7 @@ export const Search = () => {
       />
       <input
         type="text"
-        placeholder="Buscar"
+        placeholder="Search"
         value={query}
         onChange={handleQueryChange}
         className="h-10 w-full md:w-60 bg-transparent border border-gray-400 pl-9 text-gray-100 rounded-md outline-none focus-within:border-blue-300 focus-within:ring-blue-300 placeholder:text-gray-300 placeholder:text-body-sm text-body-sm transition-all duration-200"

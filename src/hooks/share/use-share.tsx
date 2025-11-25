@@ -30,7 +30,7 @@ export const useShare = ({ url, title, text }: UseShareProps) => {
         }
         const providerConfig = SOCIAL_PROVIDERS[provider];
         if (!providerConfig) {
-          throw new Error(`Provider não suportado: ${provider}`);
+          throw new Error(`Provider not supported: ${provider}`);
         }
 
         const shareUrl = providerConfig.shareUrl(shareConfig);

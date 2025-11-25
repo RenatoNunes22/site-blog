@@ -13,8 +13,8 @@ export default function BlogPage({ posts }: BlogPageProps) {
   const router = useRouter();
   const query = (router.query.q as string) ?? '';
   const pageTitle = query
-    ? `Resultado de busca para "${query}"`
-    : 'Dicas e estratégias para impulsionar seu negócio';
+    ? `Search results for "${query}"`
+    : 'Tips and strategies to boost your business';
 
   const postList = query
     ? posts.filter((post) => post.title.toLowerCase().includes(query.toLowerCase()))
@@ -31,7 +31,7 @@ export default function BlogPage({ posts }: BlogPageProps) {
               BLOG
             </span>
 
-            {/* Titulo */}
+            {/* Title */}
             <h1 className="text-balance text-start md:text-left text-heading-lg md:text-heading-xl max-w-2xl text-gray-100">
               {pageTitle}
             </h1>
@@ -40,7 +40,7 @@ export default function BlogPage({ posts }: BlogPageProps) {
         </div>
       </header>
 
-      {/* Listagem de posts */}
+      {/* Post list */}
       {hasPosts ? (
         <PostGridCard>
           {postList.map((post) => (
@@ -50,7 +50,7 @@ export default function BlogPage({ posts }: BlogPageProps) {
               title={post.title}
               description={post.description}
               image={post.image}
-              date={new Date(post.date).toLocaleDateString('pt-BR', {
+              date={new Date(post.date).toLocaleDateString('en-US', {
                 day: '2-digit',
                 month: '2-digit',
                 year: 'numeric',
@@ -66,7 +66,7 @@ export default function BlogPage({ posts }: BlogPageProps) {
         <div className="container px-8">
           <div className="flex flex-col items-center justify-center gap-4 border-dashed border-2 border-gray-300 p-8 md:p-12 rounded-[12px]">
             <Inbox className="h-12 w-12 text-cyan-100" />
-            <p className="text-gray-100 text-center">Nenhum post encontrado.</p>
+            <p className="text-gray-100 text-center">No posts found.</p>
           </div>
         </div>
       )}

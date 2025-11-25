@@ -9,7 +9,7 @@ const ptSansCaption = PT_Sans_Caption({
 const customerStories = [
   {
     content:
-      'Criar minha loja com o site.set foi a melhor decisão para o meu negócio. A plataforma é super intuitiva, e consegui colocar meus produtos à venda em poucos minutos.',
+      'Creating my store with site.set was the best decision for my business. The platform is super intuitive, and I was able to put my products on sale in a few minutes.',
     author: {
       name: 'Annete Bones',
       role: 'CEO na Anne Corp',
@@ -17,7 +17,7 @@ const customerStories = [
   },
   {
     content:
-      'Transformar minha ideia em uma loja online foi fácil e rápido. Adorei as opções de personalização e a simplicidade para gerenciar os pedidos. Já vejo meus produtos alcançando mais pessoas!',
+      'Turning my idea into an online store was easy and fast. I loved the customization options and the simplicity of managing orders. I already see my products reaching more people!',
     author: {
       name: 'Jacob Jones',
       role: 'CEO na JJ Corp',
@@ -30,7 +30,7 @@ export const CustomerStorySection = () => {
     <section className="container py-8 md:py-10">
       <div className="flex flex-col items-center gap-12">
         <h2 className={`${ptSansCaption.className} text-heading-xl text-gray-100`}>
-          Quem utiliza, aprova!
+          Those who use it, approve!
         </h2>
 
         <div className="grid gap-8 md:grid-cols-2">
