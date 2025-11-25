@@ -13,14 +13,14 @@
     "raw": "\r\n# Sell your products online with Site.Set\r\n\r\nIf you are looking for a simple and effective way to sell your products online, Site.Set is the perfect solution for you. Creating a successful online store has never been easier. With our intuitive platform, you can create a professional site for your store in minutes, without needing technical knowledge.\r\n\r\n## Platform Features\r\n\r\n- Responsive store: Your store will be optimized for all devices, ensuring a perfect shopping experience on any screen.\r\n- Inventory management: Organize your products easily and keep control over your store's stock.\r\n- Payment methods: Accept payments quickly and securely with various payment gateway options.\r\n- SEO and marketing: Our platform comes with integrated SEO tools to help your store be found more easily in search engines.\r\n- Specialized support: Our support team is always available to help you with any questions or challenges.\r\n\r\nAre you ready to put your products out into the world? With Site.Set, creating your online store is fast, simple, and affordable. From site setup to checkout, we offer all the tools you need to sell successfully.\r\n",
     "html": "<h1>Sell your products online with Site.Set</h1>\n<p>If you are looking for a simple and effective way to sell your products online, Site.Set is the perfect solution for you. Creating a successful online store has never been easier. With our intuitive platform, you can create a professional site for your store in minutes, without needing technical knowledge.</p>\n<h2>Platform Features</h2>\n<ul>\n<li>Responsive store: Your store will be optimized for all devices, ensuring a perfect shopping experience on any screen.</li>\n<li>Inventory management: Organize your products easily and keep control over your store's stock.</li>\n<li>Payment methods: Accept payments quickly and securely with various payment gateway options.</li>\n<li>SEO and marketing: Our platform comes with integrated SEO tools to help your store be found more easily in search engines.</li>\n<li>Specialized support: Our support team is always available to help you with any questions or challenges.</li>\n</ul>\n<p>Are you ready to put your products out into the world? With Site.Set, creating your online store is fast, simple, and affordable. From site setup to checkout, we offer all the tools you need to sell successfully.</p>"
   },
-  "_id": "primeiro.post.md",
+  "_id": "first.post.md",
   "_raw": {
-    "sourceFilePath": "primeiro.post.md",
-    "sourceFileName": "primeiro.post.md",
+    "sourceFilePath": "first.post.md",
+    "sourceFileName": "first.post.md",
     "sourceFileDir": ".",
     "contentType": "markdown",
-    "flattenedPath": "primeiro.post"
+    "flattenedPath": "first.post"
   },
   "type": "Post",
-  "slug": "primeiro.post"
+  "slug": "first.post"
 }
