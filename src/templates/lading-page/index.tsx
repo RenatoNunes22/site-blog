@@ -1,4 +1,3 @@
-import { CallToAction } from '@/templates/lading-page/sections/call-to-action/call-to-action';
 import { CustomerStorySection } from '@/templates/lading-page/sections/customer-story-section/customer-story-section';
 import { FeatureSection } from '@/templates/lading-page/sections/feature-section/feature-section';
 import { HeroSection } from '@/templates/lading-page/sections/hero-section/hero-section';
@@ -11,7 +10,6 @@ export const LadingPage = () => {
       <FeatureSection />
       <SupportSection />
       <CustomerStorySection />
-      <CallToAction />
     </article>
   );
 };
