@@ -1,18 +1,20 @@
+'use client';
+
 import { PostCard } from '@/templates/blog/post-card';
 import { Search } from '@/components/search';
-import { useRouter } from 'next/router';
 import { PostGridCard } from './post-grid-card.tsx';
 import { Post } from 'contentlayer/generated';
 import { Inbox } from 'lucide-react';
+import { useSearchParams } from 'next/navigation';
 
 export type BlogPageProps = {
   posts: Post[];
 };
 
 export default function BlogPage({ posts }: BlogPageProps) {
-  const router = useRouter();
-  const query = (router.query.q as string) ?? '';
-  const pageTitle = query
+  const searchParams = useSearchParams();
+  const query: string = searchParams?.get('q') ?? '';
+  const pageTitle: string = query
     ? `Search results for "${query}"`
     : 'Tips and strategies to boost your business';
 

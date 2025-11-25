@@ -2,7 +2,7 @@ import BlogPage, { BlogPageProps } from '@/templates/blog';
 import { allPosts } from 'contentlayer/generated';
 import { GetStaticProps } from 'next';
 
-export default function Blog({ posts }: BlogPageProps) {
+export default function BlogList({ posts }: BlogPageProps) {
   return <BlogPage posts={posts} />;
 }
 
