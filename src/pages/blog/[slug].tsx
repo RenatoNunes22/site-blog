@@ -1,9 +1,9 @@
-import { PostPage as Post } from '@/templates/blog/post-page'
-import { allPosts } from 'contentlayer/generated';
+import { PostPage as PostTemplate } from '@/templates/blog/post-page'
+import { allPosts, Post } from 'contentlayer/generated';
 import { GetStaticPaths, GetStaticProps } from 'next';
 
-export default function PostPage({ post }: { post: any }) {
-  return <Post post={post} />
+export default function PostPage({ post }: { post: Post }) {
+  return <PostTemplate post={post} />
 }
 
 export const getStaticPaths = (async () => {
