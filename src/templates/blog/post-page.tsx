@@ -1,4 +1,4 @@
-import { allPosts, Post } from 'contentlayer/generated';
+import { Post } from 'contentlayer/generated';
 import Image from 'next/image';
 import Link from 'next/link';
 import { Avatar } from '@/components/avatar';

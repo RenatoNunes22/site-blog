@@ -32,7 +32,7 @@ export const FeatureSection = () => {
             </span>
 
             <h2 className="font-sans text-gray-100 text-heading-lg">
-              Have a personalized online store with your brand's look
+              Have a personalized online store with your brand&apos;s look
             </h2>
 
             <Button asChild className="w-fit rounded-full hidden mt-4 md:mt-auto md:flex">

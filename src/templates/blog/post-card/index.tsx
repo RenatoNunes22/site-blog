@@ -17,7 +17,7 @@ type PostCardProps = {
 };
 
 export const PostCard = ({ slug, title, description, image, date, author }: PostCardProps) => {
-  const { name, avatar } = author;
+  const { name } = author;
 
   return (
     <Link

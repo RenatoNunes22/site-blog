@@ -1,8 +1,8 @@
 import { PostPage as Post } from '@/templates/blog/post-page'
-import { allPosts } from 'contentlayer/generated';
+import { allPosts, Post as PostType } from 'contentlayer/generated';
 import { GetStaticPaths, GetStaticProps } from 'next';
 
-export default function PostPage({ post }: { post: any }) {
+export default function PostPage({ post }: { post: PostType }) {
   return <Post post={post} />
 }
 
