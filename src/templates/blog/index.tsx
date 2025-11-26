@@ -2,7 +2,7 @@
 
 import { PostCard } from '@/templates/blog/post-card';
 import { Search } from '@/components/search';
-import { PostGridCard } from './post-grid-card.tsx';
+import { PostGridCard } from './post-grid-card/index';
 import { Post } from 'contentlayer/generated';
 import { Inbox } from 'lucide-react';
 import { useSearchParams } from 'next/navigation';

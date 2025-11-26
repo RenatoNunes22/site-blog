@@ -1,4 +1,4 @@
-import BlogList from "@/pages/blogg";
+import BlogList from "@/pages/blog-page";
 import { allPosts } from "contentlayer/generated";
 
 export default function BlogListPage() {

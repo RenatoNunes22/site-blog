@@ -38,7 +38,7 @@
     ".contentlayer/generated",
     "next-env.d.ts",
     ".next/types/**/*.ts"
-  ],
+, "src/templates/blog/post-grid-card"  ],
   "exclude": [
     "node_modules"
   ]
